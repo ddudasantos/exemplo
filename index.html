@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f1f7ef">
+  <title>Reserva IFRN | Sua posição, sem complicação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="landing">
+    <section class="intro" aria-labelledby="main-title">
+      <div class="decor decor-top" aria-hidden="true"></div>
+      <div class="decor decor-bottom" aria-hidden="true"></div>
+
+      <a class="brand" href="#" aria-label="Reserva IFRN - página inicial">
+        <span class="brand-icon"><img src="img/Caracol Mascote com Tigela Branca.png" alt=""></span>
+        <span class="brand-text"><strong>Reserva</strong><small>IFRN</small></span>
+      </a>
+
+      <div class="intro-copy">
+        <span class="eyebrow">RESERVA IFRN</span>
+        <h1 id="main-title">Sua refeição,<br>sem complicação.</h1>
+        <p>Organize sua entrada na lista de espera do campus com tranquilidade e praticidade.</p>
+      </div>
+
+      <div class="intro-bottom">
+        <div class="mascot-wrap">
+          <img class="mascot" src="img/Caracol Mascote com Tigela Branca.png" alt="Mascote caramujo verde sorridente do Reserva IFRN">
+          <span class="mascot-spark spark-one" aria-hidden="true">✦</span>
+          <span class="mascot-spark spark-two" aria-hidden="true">✧</span>
+        </div>
+    </section>
+
+    <section class="login-panel" aria-labelledby="login-title">
+      <div class="login-content">
+        <span class="eyebrow">ACESSO ESTUDANTIL</span>
+        <h2 id="login-title">Entre na lista de<br class="desktop-break"> espera.</h2>
+        <p class="login-description">Acesse com o SUAP para acompanhar e solicitar sua inclusão na lista de espera.</p>
+
+        <form id="login-form">
+          <label for="matricula">Matrícula</label>
+          <input id="matricula" name="matricula" type="text" placeholder="Digite sua matrícula" autocomplete="username" required>
+
+          <div class="password-heading">
+            <label for="senha">Senha</label>
+            <button class="forgot" type="button" id="forgot-button">Esqueci minha senha</button>
+          </div>
+          <div class="password-field">
+            <input id="senha" name="senha" type="password" placeholder="Digite sua senha" autocomplete="current-password" required>
+            <button class="toggle-password" type="button" aria-label="Mostrar senha" id="toggle-password">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+
+          <button class="submit-button" type="submit">Entrar com o SUAP <span aria-hidden="true">→</span></button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <footer>Reserva IFRN <span>•</span> Lista de espera do campus</footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
